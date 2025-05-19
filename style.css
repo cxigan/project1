@@ -429,3 +429,34 @@ font-size: 30px;
 .telegram {
   background-image: url(../img/telegram.png);
 }
+
+/* Стили для кнопки */
+.menu-toggle {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  display: none; /* по умолчанию скрыта */
+}
+
+/* Скрываем меню на мобильных */
+.nav {
+  display: none;
+}
+
+/* Когда меню активно */
+.nav.active {
+  display: block;
+}
+
+/* Показываем кнопку и адаптируем на мобильных */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav__list {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
