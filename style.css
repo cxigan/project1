@@ -73,39 +73,8 @@ h3 {
   font-size: 20px;
 }
 
-.header__burger {
-  width: 30px;
-  height: 20px;
-  display: none;
-  align-items: center;
-  margin-right: 18px;
-}
 
-.header__burger-el {
-  height: 2px;
-  width: 100%;
-  background-color: #21243d;
-  position: relative;
-}
-
-.header__burger-el::before,
-.header__burger-el::after {
-  content: "";
-  height: 2px;
-  width: 100%;
-  background-color: #21243d;
-  position: absolute;
-}
-
-.header__burger-el::before {
-  top: -9px;
-}
-
-.header__burger-el::after {
-  bottom: -9px;
-}
-
-@media (max-width: 480px) {
+@media (max-width: 750px) {
   .header {
     padding-top: 20px;
   }
@@ -114,9 +83,6 @@ h3 {
     display: none;
   }
 
-  .header__burger {
-    display: flex;
-  }
 }
 
 .title {
@@ -145,7 +111,7 @@ font-size: 30px;
 
 .about__desc {
   margin: 40px 0px;
-}
+}s
 
 .about__avatar {
   width: 243px;
@@ -182,7 +148,7 @@ font-size: 30px;
   padding: 35px 0px 63px;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 750px) {
   .about__container {
     flex-direction: column-reverse;
     align-items: center;
@@ -247,7 +213,7 @@ font-size: 30px;
   margin-left: 26px;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 750px) {
   .recent-posts__top {
     justify-content: center;
     margin-bottom: 18px;
@@ -328,7 +294,7 @@ font-size: 30px;
   color: #8695a4;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 750px) {
   .fetured__works {
     display: flex;
     overflow: auto;
@@ -440,9 +406,6 @@ font-size: 30px;
 }
 
 /* Скрываем меню на мобильных */
-.nav {
-  display: none;
-}
 
 /* Когда меню активно */
 .nav.active {
